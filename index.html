@@ -5,5 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div class="widget">
+      <div class="hdr">
+        <div class="hdr__left">
+          <div class="token-icon" id="tokenIcon"></div>
+          <div>
+            <div class="hdr__sym" id="tokenSym">BTC</div>
+            <div class="hdr__name" id="tokenName">
+              Bitcoin <span class="live-dot"></span>Live
+            </div>
+          </div>
+        </div>
+        <div class="hdr__right">
+          <div class="price" id="priceEl">$71,842</div>
+          <div class="delta up" id="deltaEl">▲ +2.84%</div>
+        </div>
+      </div>
+
+      <div class="token-tabs" id="tokenTabs"></div>
+      <div class="tf-row" id="tfRow"></div>
+
+      <div class="chart-wrap" id="chartWrap">
+        <svg
+          id="chartSvg"
+          viewBox="0 0 680 200"
+          preserveAspectRatio="none"
+        ></svg>
+        <div class="crosshair-line" id="crosshairLine"></div>
+        <div class="crosshair-dot" id="crosshairDot"></div>
+        <div class="tooltip" id="tooltip">
+          <div class="tooltip__price" id="ttPrice"></div>
+          <div class="tooltip__time" id="ttTime"></div>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div>
+          <div class="stat__label">24h High</div>
+          <div class="stat__val up" id="statHigh">—</div>
+        </div>
+        <div>
+          <div class="stat__label">24h Low</div>
+          <div class="stat__val down" id="statLow">—</div>
+        </div>
+        <div>
+          <div class="stat__label">Volume</div>
+          <div class="stat__val" id="statVol">—</div>
+        </div>
+        <div>
+          <div class="stat__label">Mkt Cap</div>
+          <div class="stat__val" id="statMcap">—</div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
